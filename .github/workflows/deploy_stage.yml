@@ -27,9 +27,11 @@ jobs:
         with:
           os: ${{ matrix.os }}
           version: 9.x.x
+        
       - name: Auth
         uses: adobe/aio-apps-action@2.0.2
         with:
+          run: echo "scope - ${{ env.SCOPE_STRING }} "
           os: ${{ matrix.os }}
           command: auth
           CLIENTID: ${{ secrets.CLIENTID_STAGE }}
