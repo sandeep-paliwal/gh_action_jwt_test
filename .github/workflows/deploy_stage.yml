@@ -36,7 +36,7 @@ jobs:
           CLIENTSECRET: ${{ secrets.CLIENTSECRET_STAGE }}
           TECHNICALACCOUNTID: ${{ secrets.TECHNICALACCID_STAGE }}
           IMSORGID: ${{ secrets.IMSORGID_STAGE }}
-          SCOPES: ${{ SCOPE_STRING }}
+          SCOPES: ${{ env.SCOPE_STRING }}
           KEY: ${{ secrets.KEY_STAGE }}
       - name: Build
         env:
