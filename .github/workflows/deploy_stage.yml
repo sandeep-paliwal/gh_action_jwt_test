@@ -28,7 +28,7 @@ jobs:
           os: ${{ matrix.os }}
           version: 9.x.x
       - name: PrintScope
-        run: echo " scope ${{ secrets.SCOPES_STAGE }}"
+        run: echo " scope ${{ env.SCOPE_STRING }} "
         
       - name: Auth
         uses: adobe/aio-apps-action@2.0.2
