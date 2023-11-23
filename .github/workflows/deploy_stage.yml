@@ -45,6 +45,6 @@ jobs:
       #   env:
       #     AIO_RUNTIME_NAMESPACE: ${{ secrets.AIO_RUNTIME_NAMESPACE_STAGE }}
       #   uses: adobe/aio-apps-action@2.0.2
-        with:
-          os: ${{ matrix.os }}
-          command: build
+        # with:
+        #   os: ${{ matrix.os }}
+        #   command: build
